@@ -135,3 +135,67 @@ body {
 		text-align: center;
 	}
 }
+.subnav {
+    float: right;
+    overflow: hidden;
+	height:60px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #330066; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+	scrollbar:no
+	background-color:white;
+}
+.navbar a {
+    float: right;
+    font-size: 20px;
+    color: white;
+	background-color:#330066;
+    text-align: center;
+    padding: 15px 23px;
+    text-decoration: none;
+}
+.subnav .subnavbtn {
+    font-size: 10px; 
+    color:white;   
+    border: none;
+    outline: none;
+    padding: 20px 40px;
+    background-color: black;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #4d0099;
+}
+
+.subnav-content {
+    display: none;
+    position:absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index:1;
+
+}
+
+.subnav-content a {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
