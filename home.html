@@ -32,9 +32,11 @@
 			href="node_modules/bootstrap-social/bootstrap-social.css"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="./js/redirect.js"></script>
+		<!-- <link rel="stylesheet" href="CSS/bg.css" /> -->
 	</head>
 
-	<body class="css-bg">
+	<body hidden class="css-bg">
 		<!--Below Navigation part-->
 
 		<header class="bg-white">
@@ -115,12 +117,17 @@
 								><span class="fa fa-institution"></span>About Institute</a
 							>
 						</li>
+						<li class="nav-item active">
+							<a id="logout" class="nav-link text-white" href="#"
+								><span class="fa fa-logout"></span>Log out</a
+							>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>-->
 
-		<div class="justify-content-center">
+		<div class="justify-content-center mainHeader">
 			<h1 class="text-dark hackathon d-flex p-2 justify-content-center">
 				<strong>स्वयमसिद्ध HACKATHON 20-20</strong><br>
 			</h1>
@@ -211,7 +218,7 @@
 		</div>
 
 		<!--About Event-->
-		<div class="justify-content-center back">
+		<div class="justify-content-center back aboutEvent">
 			<h1 class="text-white hackathon d-flex p-2 justify-content-center">
 				<strong>स्वयमसिद्ध HACKATHON 20-20</strong>
 			</h1>
@@ -228,8 +235,8 @@
 			</p>
 		</div>
 
-		<div class="row d-flex justify-content-center mt-5 sectorback">
-			<h3 class="text-white p-4"><strong>THEMES</strong></h3>
+		<div class="row d-flex justify-content-center mt-5 sectorbackHead">
+			<h3 class="text-white p-4 col-sm-8 themeText"><strong>THEMES</strong></h3>
 		</div>
 
 		<!--Sector Part-->
@@ -237,10 +244,11 @@
 			<div class="media sectorback row col-sm-8 mt-5 p-3">
 				<div style="text-align: center;">
 					<img
-						class="image-fluid"
+						class="image-fluid sectorimage"
 						src="images/sectors/agricul.jpg"
 						height="300"
 						width="295"
+						style="margin: auto; border: 3px solid #eee;"
 						style="margin: auto;"
 					/>
 				</div>
@@ -255,7 +263,9 @@
 						help in overcoming those challenges shortly.
 					</p>
 					<center>
-						<button class="btn btn-primary .align-bottom">Register</button>
+						<button class="btn btn-outline-light .align-bottom">
+							Register
+						</button>
 					</center>
 				</div>
 			</div>
@@ -263,10 +273,11 @@
 			<div class="media sectorback row col-sm-8 mt-5 p-3">
 				<div style="text-align: center;">
 					<img
-						class="image-fluid"
+						class="image-fluid sectorimage"
 						src="images/sectors/water management.jpeg"
 						height="300"
 						width="295"
+						style="margin: auto; border: 3px solid #eee;"
 					/>
 				</div>
 				<div class="media-body ml-3">
@@ -277,17 +288,20 @@
 						municipal sewage, industrial effluents, agrochemicals,and pesticides
 						have further threatened the availability of good quality water.
 					</p>
-					<center><button class="btn btn-primary">Register</button></center>
+					<center>
+						<button class="btn btn-outline-light">Register</button>
+					</center>
 				</div>
 			</div>
 
 			<div class="media sectorback row col-sm-8 mt-5 p-3">
 				<div style="text-align: center;">
 					<img
-						class="image-fluid"
+						class="image-fluid sectorimage"
 						src="images/sectors/renewable energy.jpeg"
 						height="300"
 						width="295"
+						style="margin: auto; border: 3px solid #eee;"
 					/>
 				</div>
 
@@ -300,17 +314,20 @@
 						doubling of India's large wind power capacity and an almost 15 fold
 						increase in solar power from April 2016 levels.
 					</p>
-					<center><button class="btn btn-primary">Register</button></center>
+					<center>
+						<button class="btn btn-outline-light">Register</button>
+					</center>
 				</div>
 			</div>
 
 			<div class="media sectorback row col-sm-8 mt-5 p-3">
 				<div style="text-align: center;">
 					<img
-						class="image-fluid"
+						class="image-fluid sectorimage"
 						src="images/sectors/artisians.jpeg"
 						height="300"
 						width="295"
+						style="margin: auto; border: 3px solid #eee;"
 					/>
 				</div>
 
@@ -330,17 +347,20 @@
 						generations without undermining the natural environment or resource
 						base.
 					</p>
-					<center><button class="btn btn-primary">Register</button></center>
+					<center>
+						<button class="btn btn-outline-light">Register</button>
+					</center>
 				</div>
 			</div>
 
 			<div class="media sectorback row col-sm-8 mt-5 p-3">
 				<div style="text-align: center;">
 					<img
-						class="image-fluid"
+						class="image-fluid sectorimage"
 						src="images/sectors/aminities.jpg"
 						height="300"
 						width="295"
+						style="margin: auto; border: 3px solid #eee;"
 					/>
 				</div>
 
@@ -356,17 +376,20 @@
 						weather road to village, electrification, fuel, connectivity,
 						heschool, playground and recreational facilities and many more
 					</p>
-					<center><button class="btn btn-primary">Register</button></center>
+					<center>
+						<button class="btn btn-outline-light">Register</button>
+					</center>
 				</div>
 			</div>
 
 			<div class="media sectorback row col-sm-8 mt-5 p-3">
 				<div style="text-align: center;">
 					<img
-						class="image-fluid"
+						class="image-fluid sectorimage"
 						src="images/sectors/infrastucture.jpg"
 						height="300"
 						width="295"
+						style="margin: auto; border: 3px solid #eee;"
 					/>
 				</div>
 
@@ -379,17 +402,20 @@
 						sanitation systems, all of which already suffer from a substantial
 						deficit.
 					</p>
-					<center><button class="btn btn-primary">Register</button></center>
+					<center>
+						<button class="btn btn-outline-light">Register</button>
+					</center>
 				</div>
 			</div>
 
 			<div class="media sectorback row col-sm-8 mt-5 p-3">
 				<div style="text-align: center;">
 					<img
-						class="image-fluid"
+						class="image-fluid sectorimage"
 						src="images/sectors/women.jpeg"
 						height="300"
 						width="295"
+						style="margin: auto; border: 3px solid #eee;"
 					/>
 				</div>
 
@@ -402,17 +428,20 @@
 						infanticide, domestic violence against women, rape, prostitution,
 						illegal trafficking and other issues
 					</p>
-					<center><button class="btn btn-primary">Register</button></center>
+					<center>
+						<button class="btn btn-outline-light">Register</button>
+					</center>
 				</div>
 			</div>
 
 			<div class="media sectorback row col-sm-8 mt-5 mb-5 p-3">
 				<div style="text-align: center;">
 					<img
-						class="image-fluid"
+						class="image-fluid sectorimage"
 						src="images/sectors/education.png"
 						height="300"
 						width="295"
+						style="margin: auto; border: 3px solid #eee;"
 					/>
 				</div>
 
@@ -430,7 +459,9 @@
 						and any experience that has a formative effect on the way one
 						thinks, feels, or acts may be considered educational.
 					</p>
-					<center><button class="btn btn-primary">Register</button></center>
+					<center>
+						<button class="btn btn-outline-light">Register</button>
+					</center>
 				</div>
 			</div>
 		</div>
@@ -440,7 +471,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-sm col-md">
+					<div class="col-12 col-sm-12 col-md-12 address">
 						<h5 class="text-white">Address</h5>
 						<address class="text-white">
 							All India Shree Shivaji<br />
@@ -454,7 +485,7 @@
 							>
 						</address>
 					</div>
-					<div class="col-12 col-sm-4 align-self-center">
+					<div class="col-12 col-sm-4 align-self-center followUs">
 						<div class="text-center">
 							<h5 class="text-white">Follow Us</h5>
 							<a
@@ -482,11 +513,12 @@
 				</div>
 				<div>
 					<div>
-						<p>© Copyright 2020 --HACKATHON 2020</p>
+						<p class="copyright">© Copyright 2020 --HACKATHON 2020</p>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<script src="./js/logout.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

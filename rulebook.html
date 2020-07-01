@@ -26,9 +26,10 @@
 			rel="stylesheet"
 			href="node_modules/bootstrap-social/bootstrap-social.css"
 		/>
+		<script src="./js/redirect.js"></script>
 	</head>
 
-	<body>
+	<body hidden>
 		<header class="bg-white">
 			<div class="row justify-content-center">
 				<div class="row col-sm-6">
@@ -84,6 +85,11 @@
 								<li class="nav-item active">
 									<a class="nav-link text-white" href="./aboutclg.html"
 										><span class="fa fa-institution"></span>About Institute</a
+									>
+								</li>
+								<li class="nav-item active">
+									<a id="logout" class="nav-link text-white" href="#"
+										><span class="fa fa-logout"></span>Log out</a
 									>
 								</li>
 							</ul>
@@ -252,6 +258,8 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/logout.js"></script>
+
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
