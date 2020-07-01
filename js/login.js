@@ -4,7 +4,33 @@ const error = document.getElementById('error-msg')
 const loginBtn = document.querySelector("button[type='submit']")
 const loader = document.querySelector('#loader')
 
+const recoverPasswordBtn = document.getElementById('recover-password')
+const mailSentMsg = document.getElementById('mail-sent-msg')
+const recoveryError = document.getElementById('recovery-error')
+
+recoverPasswordBtn.onclick = forgetPassword
+
 form.onsubmit = submit
+
+function forgetPassword(e) {
+	e.preventDefault()
+	//reset to default
+	mailSentMsg.setAttribute('hidden', true)
+	recoveryError.setAttribute('hidden', true)
+
+	const emailForPassRecovery = document.getElementById('input-email').value
+	auth
+		.sendPasswordResetEmail(emailForPassRecovery)
+		.then(function () {
+			// Email sent.
+			mailSentMsg.removeAttribute('hidden', '')
+		})
+		.catch(function (error) {
+			recoveryError.removeAttribute('hidden', '')
+			recoveryError.innerText = error.message
+			console.log(error.message)
+		})
+}
 
 async function submit(event) {
 	event.preventDefault()

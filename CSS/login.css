@@ -77,3 +77,7 @@
 .login form .btn-primary:active {
 	transform: translateY(1px);
 }
+
+.modal.show .modal-dialog {
+	background: beige;
+}
