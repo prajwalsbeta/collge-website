@@ -244,20 +244,20 @@ h3
 }
 .navbar {
     overflow: hidden;
-    background-color: #330066; 
+    background-color: #092532; 
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
-	scrollbar:no
+	scrollbar:no;
 	background-color:white;
 }
 .navbar a {
     float: right;
     font-size: 20px;
     color: white;
-	background-color:#330066;
+	background-color:#092532;
     text-align: center;
     padding: 15px 23px;
     text-decoration: none;
@@ -274,7 +274,7 @@ body {
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: #4d0099;
+    background-color: #204060;
 }
 
 .subnav-content {

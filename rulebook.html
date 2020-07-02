@@ -12,6 +12,11 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 		<!-- Bootstrap CSS -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="css/style.css" />
+
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -26,6 +31,7 @@
 			rel="stylesheet"
 			href="node_modules/bootstrap-social/bootstrap-social.css"
 		/>
+		<link rel="stylesheet" href="css/style.css" />
 		<script src="./js/redirect.js"></script>
 	</head>
 
@@ -43,7 +49,31 @@
 			</div>
 		</header>
 
-		<div class="bg-dark">
+		<div class="navbar">
+			<div class="subnav">   
+				<a href="index.html"><i class="fa fa-star"></i>&nbsp; Index &nbsp;</a></button>
+			</div>
+			<div class="subnav">   
+				<a href="home.html"><i class="fa fa-home"></i>&nbsp; Home &nbsp;</a></button>
+			</div>
+			<div class="subnav">   
+				<a href="./rulebook.html"><i class="fa fa-tasks"></i>&nbsp; Rule Book &nbsp;</a></button>
+			</div>
+			<div class="subnav"> 
+				<a href="./uba.html"><i class="fa fa-flag"></i>&nbsp; Unnat Bharat Abhiyan &nbsp;</a></button>
+			</div>
+			<div class="subnav">   
+				<a href="./aboutus.html"><i class="fa fa-user"></i>&nbsp; About Us &nbsp;</a></button>
+			</div>
+			<div class="subnav">  
+				<a href="./aboutclg.html"><i class="fa fa-book"></i>&nbsp; About Institute &nbsp;</a></button>	
+			</div>
+			<div class="subnav">  
+				<a href="#"><i class="fa fa-lock"></i>&nbsp; Log Out &nbsp;</a></button>	
+			</div>
+		</div>
+
+		<!--<div>
 			<div>
 				<nav class="navbar back navbar-dark navbar-expand-md">
 					<div class="container">
@@ -96,8 +126,9 @@
 						</div>
 					</div>
 				</nav>
-			</div>
-			<h4 class="text-white hackathon d-flex p-2 justify-content-center">
+			</div>-->
+
+			<h4 class="hackathon d-flex p-2 justify-content-center" style="font-size: 30px;">
 				<strong>स्वयमसिद्ध HACKATHON 20-20</strong>
 			</h4>
 		</div>
@@ -112,26 +143,26 @@
 					<div class="card">
 						<div class="card-body">
 							<ul>
-								<li>Step 1-First Register on website</li>
-								<li>Step 2-Choose your sector from website</li>
-								<li>Step 3-Put your ideas and description in detail</li>
+								<li>Step 1 - First Register on website</li>
+								<li>Step 2 - Choose your sector from website</li>
+								<li>Step 3 - Put your ideas and description in detail</li>
 								<li>
-									Step 4-First of all we will have to select best three ideas
+									Step 4 - First of all we will have to select best three ideas
 									from each sector
 								</li>
 								<li>
-									Step 5-Selected participants have to give the detail
+									Step 5 - Selected participants have to give the detail
 									explanation and solution of their ideas with PPT
 								</li>
 								<li>
-									Step 6-Then selection of best 10 solution from 30 will be done
+									Step 6 - Then selection of best 10 solution from 30 will be done
 								</li>
 								<li>
-									Step 7-Working process on that ideas will be started after the
+									Step 7 - Working process on that ideas will be started after the
 									reopening of college
 								</li>
 								<li>
-									Step 8-Then we will to apply that the proposal and we will
+									Step 8 - Then we will to apply that the proposal and we will
 									upload that project to UBA (govt) for providing funds for that
 									project.(projects from our college)
 								</li>
@@ -147,7 +178,7 @@
 		<div class="container">
 			<div class="row row-content">
 				<div class="col-12 col-sm">
-					<h2 class="card-header bg-danger text-white col-sm-6">
+					<h2 class="card-header bg-success text-white col-sm-6">
 						Selection Criteria
 					</h2>
 					<div class="card">
@@ -208,24 +239,32 @@
 			</div>
 		</div>
 
-		<footer class="footer bg-dark">
+		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-sm col-md">
+					<div class="col-12 col-sm col-md address">
 						<h5 class="text-white">Address</h5>
 						<address class="text-white">
 							All India Shree Shivaji<br />
 							Memorial Societiy's College Of Engineering,<br />
 							Pune-411001.<br />
-							<i class="fa fa-envelope-o"></i> Email:
-							<a
-								href="https://mail.google.com/mail/u/2/#inbox"
-								class="text-black"
-								>ubaaissmscoe@gamil.com</a
+							<i class="fa fa-phone-square"></i> Tel:
+							<a href="tel:+20 2605 7660" class="text-black"
+								>91-20 2605 7660 / 2605 8587,</a
+							>
+							<br />
+							<i class="fa fa-mobile"></i> Mobile:
+							<a href="tel:+91 8496 045 045" class="text-black"
+								>+91 8496 045 045</a
+							>
+							<br /><i class="fa fa-envelope-o"></i> Email:
+							<a href="mailto: abc@example.com" class="text-black"
+								>principal@aissmscoe.com </a><br />
+								<a href="mailto: abc@example.com" class="text-black">uba2018@aissmscoe.com</a
 							>
 						</address>
 					</div>
-					<div class="col-12 col-sm-4 align-self-center">
+					<div class="col-12 col-sm-4 followUs">
 						<div class="text-center">
 							<h5 class="text-white">Follow Us</h5>
 							<a
@@ -253,11 +292,12 @@
 				</div>
 				<div>
 					<div>
-						<p>© Copyright 2020 --HACKATHON 2020</p>
+						<p class="copyright">© Copyright 2020 --HACKATHON 2020</p>
 					</div>
 				</div>
 			</div>
 		</footer>
+
 		<script src="./js/logout.js"></script>
 
 		<script
