@@ -1,6 +1,7 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
+import 'firebase/storage'
 const firebaseConfig = {
 	apiKey: 'AIzaSyDhz2KWMu0QUKziPbO5Aql4qbljwU09aac',
 	authDomain: 'hackathon-e1052.firebaseapp.com',
@@ -15,4 +16,5 @@ firebase.initializeApp(firebaseConfig)
 
 export const firestore = firebase.firestore()
 export const auth = firebase.auth()
+export const storage = firebase.storage()
 export default firebase

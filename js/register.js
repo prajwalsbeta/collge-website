@@ -14,6 +14,7 @@ export function createTeam(info) {
 		.then(() => {
 			form.reset()
 			thanks.removeAttribute('hidden')
+			loader.setAttribute('hidden', true)
 		})
 		.catch((err) => {
 			error.removeAttribute('hidden', '')
@@ -31,7 +32,9 @@ async function submit(event) {
 	let teamLeaderName = document.querySelector("input[name='team-leader-name']")
 		.value
 	let mobileNo = document.querySelector("input[name='mobile-no']").value
-	let projectTheme = document.querySelector("input[name='project-theme']").value
+	let state = document.querySelector("input[name='state']").value
+	let city = document.querySelector("input[name='city']").value
+	let pincode = document.querySelector("input[name='pincode']").value
 	let email = document.querySelector("input[name='email']").value
 	let password = document.querySelector("input[name='password']").value
 
@@ -39,8 +42,10 @@ async function submit(event) {
 		teamName: teamName,
 		teamLeaderName: teamLeaderName,
 		mobileNo: mobileNo,
-		projectTheme: projectTheme,
 		email: email,
+		state,
+		city,
+		pincode,
 		password: password,
 	}
 	await createTeam(info)

@@ -5,7 +5,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
 		/>
-		<title>Registration</title>
+		<title>Problem Solution Submission</title>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -25,8 +25,8 @@
 		<link
 			href="node_modules\@fortawesome\fontawesome-free\css\solid.css"
 			rel="stylesheet"
-        />
-        
+		/>
+		<script src="./js/redirect.js"></script>
 	</head>
 
 	<body>
@@ -37,13 +37,11 @@
 			style="width: 150px;"
 			alt=""
 		/>
-		<div class="login">
-			<form id="register-form" action="#">
+		<div class="themeregister">
+			<form>
 				<p id="error" hidden>Please fill out all fields.</p>
 				<h2 class="sr-only">Registration Form</h2>
-				<div class="icon">
-					<i class="fas fa-user"></i>
-				</div>
+
 				<div class="form-group">
 					<input
 						class="form-control"
@@ -78,29 +76,21 @@
 				<div class="form-group">
 					<input
 						class="form-control"
-						type="text"
-						name="project-theme"
-						placeholder="Project Theme"
-						required
-					/>
-				</div>
-				<div class="form-group">
-					<input
-						class="form-control"
 						type="email"
 						name="email"
 						placeholder="Email(Team Leader)"
 					/>
-                </div>
-<!--member details-->            
+				</div>
+				<!--member details-->
 				<div class="form-group">
+					<label for="">Member 1 Details</label>
 					<div class="row">
 						<div class="col">
 							<input
 								class="form-control"
 								type="text"
-								name="member-name"
-								placeholder="1st Member Name"
+								id="member-name-1"
+								placeholder="Member Name"
 								required
 							/>
 						</div>
@@ -108,56 +98,126 @@
 							<input
 								class="form-control"
 								type="email"
-								name="email"
-								placeholder="Email(member)"
+								id="member-email-1"
+								placeholder="Email"
 								required
 							/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input
-                            class="form-control"
-                            type="text"
-                            name="mobile-no"
-                            placeholder="Mobile No(member)"
-                            required
-                        />
-                    </div>
-                </div>
-
-                <div class="form-group" >
-                    <input
-                        class="form-control"
-                        type="text"
-                        name="Problem"
-                        placeholder="Problem Statement"
-                        required
-                    />
-                </div>                
-
-                
-                <div class="form-group">
-                    <input
-                        class="form-control"
-                        type="text"
-                        name="solution"
-                        placeholder="Solution"
-                        required
-                    />
-                </div>                
-
+						</div>
+					</div>
+					<div class="form-group">
+						<input
+							class="form-control"
+							type="text"
+							id="member-mobile-no-1"
+							placeholder="Mobile No"
+							required
+						/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="">Member 2 Details</label>
+					<div class="row">
+						<div class="col">
+							<input
+								class="form-control"
+								type="text"
+								id="member-name-2"
+								placeholder="Member Name"
+								required
+							/>
+						</div>
+						<div class="col">
+							<input
+								class="form-control"
+								type="email"
+								id="member-email-2"
+								placeholder="Email"
+								required
+							/>
+						</div>
+					</div>
+					<div class="form-group">
+						<input
+							class="form-control"
+							type="text"
+							id="member-mobile-no-2"
+							placeholder="Mobile No"
+							required
+						/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="">Member 3 Details</label>
+					<div class="row">
+						<div class="col">
+							<input
+								class="form-control"
+								type="text"
+								id="member-name-3"
+								placeholder="Member Name"
+								required
+							/>
+						</div>
+						<div class="col">
+							<input
+								class="form-control"
+								type="email"
+								id="member-email-3"
+								placeholder="Email"
+								required
+							/>
+						</div>
+					</div>
+					<div class="form-group">
+						<input
+							class="form-control"
+							type="text"
+							id="member-mobile-no-3"
+							placeholder="Mobile No"
+							required
+						/>
+					</div>
+				</div>
+				<label for="">Project Details:</label>
+				<div class="form-group">
+					<input
+						class="form-control"
+						type="text"
+						name="project-theme"
+						placeholder="Project Theme"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<textarea
+						class="form-control"
+						name="problem"
+						placeholder="Problem Statement"
+						required
+						rows="4"
+					></textarea>
+				</div>
+				<div class="form-group">
+					<textarea
+						class="form-control"
+						name="solution"
+						placeholder="Solution"
+						required
+						rows="5"
+					></textarea>
+				</div>
+				<input type="file" name="ppt" />
 				<div class="form-group">
 					<button class="btn btn-primary btn-block" type="submit">
 						Register
 					</button>
 				</div>
-				<a class="newuser" href="login.pug">Already have a account</a>
 			</form>
 			<div id="thanks" hidden class="alert alert-success" role="alert">
-				Your data has been received. Thanks!
+				Registration successfull. All The Best!
 			</div>
 			<div hidden class="alert alert-danger" id="error-msg" role="alert"></div>
 		</div>
-		<script src="js/register.js"></script>
+		<script src="js/themeRegistration.js"></script>
 	</body>
 </html>
