@@ -62,11 +62,20 @@
 	background: #214a80;
 	outline: none;
 }
+
 #loader {
 	position: absolute;
 	top: 40vh;
-	left: 31vw;
+	left: 45vw;
 	z-index: 100;
+}
+@media only screen and (max-width: 768px) {
+	#loader {
+		position: absolute;
+		top: 40vh;
+		left: 31vw;
+		z-index: 100;
+	}
 }
 .login form .forgot,
 .login form .newuser {
