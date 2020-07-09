@@ -38,6 +38,7 @@ async function submit(e) {
 	thanks.setAttribute('hidden', true)
 	let info = {
 		teamMembers: [],
+		status: null,
 	}
 	for (let i = 1; i <= 3; i++) {
 		let member = {
@@ -59,15 +60,11 @@ async function submit(e) {
 	const metaData = {
 		contentType: file.type,
 	}
-	const task = ref.child(name).put(file, metaData)
-
-	task
-		.then((snapshot) => snapshot.ref.getDownloadURL())
-		.then((url) => {
-			console.log(url)
-			alert('image uploaded successfully')
-			//do something if want to
-		})
+	const snapshot = await ref.child(name).put(file, metaData)
+	const url = await snapshot.ref.getDownloadURL()
+	console.log(url)
+	info.url = url
+	console.log(info)
 	const res = await firestore
 		.collection('teams')
 		.doc(uid)
