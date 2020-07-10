@@ -45,12 +45,17 @@ function login(email, password) {
 	auth
 		.signInWithEmailAndPassword(email, password)
 		.then((userCredential) => {
-			let userDetails = {
-				id: userCredential.user.uid,
-				email: userCredential.user.email,
+			if (userCredential.user.uid === 'lp4awRKScwfOnyIzS5VVyrYlbZn1') {
+				window.location.replace(`${location.origin}/admin.html`)
+			} else {
+				let userDetails = {
+					id: userCredential.user.uid,
+					email: userCredential.user.email,
+				}
+				localStorage.setItem('user', JSON.stringify(userDetails))
+
+				window.location.replace(`${location.origin}/home.html`)
 			}
-			localStorage.setItem('user', JSON.stringify(userDetails))
-			window.location.replace(`${location.origin}/home.html`)
 		})
 		.catch(function (err) {
 			loader.setAttribute('hidden', true)
