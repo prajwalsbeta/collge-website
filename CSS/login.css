@@ -1,102 +1,107 @@
 .login {
-	height: 100vh;
-	background: #475d62;
-	background-size: cover;
-	position: relative;
+  height: 100vh;
+  background: #475d62;
+  background-size: cover;
+  position: relative;
 }
 
 .themeregister {
-	background: #475d62;
-	background-size: cover;
-	position: relative;
-	height: 1200px;
+  background: #475d62;
+  background-size: cover;
+  position: relative;
+  height: 1200px;
 }
 
 .login form,
 .themeregister form {
-	max-width: 500px;
-	width: 96%;
-	background-color: #1e2833;
-	padding: 40px;
-	border-radius: 4px;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	color: #fff;
-	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 96%;
+  background-color: #1e2833;
+  padding: 40px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .login .icon {
-	text-align: center;
-	padding: 15px 0 20px;
-	font-size: 100px;
-	color: #2980ef;
+  text-align: center;
+  padding: 15px 0 20px;
+  font-size: 100px;
+  color: #2980ef;
 }
 
 .login form .form-control,
 .themeregister form .form-control {
-	background: none;
-	border: none;
-	border-bottom: 1px solid #434a52;
-	border-radius: 0;
-	box-shadow: none;
-	outline: none;
-	color: inherit;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #434a52;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+}
+
+option {
+  background-color: #1e2833;
+  color: #fff;
 }
 
 .login form .btn-primary,
 .themeregister form .btn-primary {
-	background: #214a80;
-	border: none;
-	border-radius: 4px;
-	padding: 11px;
-	box-shadow: none;
-	margin-top: 26px;
-	text-shadow: none;
-	outline: none;
+  background: #214a80;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none;
 }
 
 .login form .btn-primary:hover,
 .login form .btn-primary:active {
-	background: #214a80;
-	outline: none;
+  background: #214a80;
+  outline: none;
 }
 
 #loader {
-	position: absolute;
-	top: 40vh;
-	left: 45vw;
-	z-index: 100;
+  position: absolute;
+  top: 40vh;
+  left: 45vw;
+  z-index: 100;
 }
 @media only screen and (max-width: 768px) {
-	#loader {
-		position: absolute;
-		top: 40vh;
-		left: 31vw;
-		z-index: 100;
-	}
+  #loader {
+    position: absolute;
+    top: 40vh;
+    left: 31vw;
+    z-index: 100;
+  }
 }
 .login form .forgot,
 .login form .newuser {
-	display: block;
-	text-align: center;
-	font-size: 20px;
-	color: #6f7a85;
-	opacity: 0.9;
-	text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none;
 }
 
 .login form .forgot:hover,
 .login form .forgot:active {
-	opacity: 1;
-	text-decoration: none;
+  opacity: 1;
+  text-decoration: none;
 }
 
 .login form .btn-primary:active {
-	transform: translateY(1px);
+  transform: translateY(1px);
 }
 
 .modal.show .modal-dialog {
-	background: beige;
+  background: beige;
 }
