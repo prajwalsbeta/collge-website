@@ -1,3 +1,14 @@
+import { firebase, auth } from "./firebase";
+document.addEventListener("DOMContentLoaded", changeNav);
+function changeNav() {
+  auth.onAuthStateChanged(function (user) {
+    if (user) {
+      document.getElementById("homeBtn").removeAttribute("hidden", "");
+      document.querySelector(".navBtn").hidden = true;
+    }
+  });
+}
+
 /*****************countdown********************/
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.now();
@@ -33,7 +44,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 // count down timer:
-var deadline = "July 10 2020 08:00:00 GMT+0530";
+var deadline = "July 31 2020 08:00:00 GMT+0530";
 
 initializeClock("time-r", deadline);
 
