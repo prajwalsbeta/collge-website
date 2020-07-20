@@ -4,8 +4,9 @@ function changeNav() {
 	auth.onAuthStateChanged(function (user) {
 		if (user) {
 			document.getElementById('homeBtn').removeAttribute('hidden', '')
-			document.querySelectorAll('.navBtn').forEach((el) => {
-				el.hidden = true
+		} else {
+			document.querySelectorAll('.navBtn').forEach((Element) => {
+				Element.removeAttribute('hidden', '')
 			})
 		}
 	})

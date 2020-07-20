@@ -30,7 +30,7 @@ body {
 
 .main-title {
   position: relative;
-  top: 35%;
+  top: 30%;
   z-index: 10;
   color: #ff7300;
   font-size: 70px;
@@ -692,7 +692,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
   .arc_reactor {
     position: relative;
     width: 250px;
@@ -728,6 +728,9 @@ ul {
     top: 33%;
     font-size: 50px;
     font-weight: 600;
+  }
+  .title-img {
+    width: 5em;
   }
 }
 
