@@ -1,236 +1,256 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Problem Solution Submission</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/login.css" />
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<title>Problem Solution Submission</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/login.css" />
 
-    <link
-      href="node_modules\@fortawesome\fontawesome-free\css\fontawesome.css"
-      rel="stylesheet"
-    />
-    <link
-      href="node_modules\@fortawesome\fontawesome-free\css\brands.css"
-      rel="stylesheet"
-    />
-    <link
-      href="node_modules\@fortawesome\fontawesome-free\css\solid.css"
-      rel="stylesheet"
-    />
-    <script src="./js/redirect.js"></script>
-  </head>
+		<link
+			href="node_modules\@fortawesome\fontawesome-free\css\fontawesome.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="node_modules\@fortawesome\fontawesome-free\css\brands.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="node_modules\@fortawesome\fontawesome-free\css\solid.css"
+			rel="stylesheet"
+		/>
+		<script src="./js/redirect.js"></script>
+	</head>
 
-  <body>
-    <img
-      id="loader"
-      hidden
-      src="./images/loader.svg"
-      style="width: 150px;"
-      alt=""
-    />
-    <div class="themeregister">
-      <form>
-        <p id="error" hidden>Please fill out all fields.</p>
-        <h2 class="sr-only">Registration Form</h2>
+	<body>
+		<img
+			id="loader"
+			hidden
+			src="./images/loader.svg"
+			style="width: 150px;"
+			alt=""
+		/>
+		<div class="themeregister">
+			<form>
+				<p id="error" hidden>Please fill out all fields.</p>
+				<h2 class="sr-only">Registration Form</h2>
 
-        <div class="form-group">
-          <input
-            class="form-control"
-            type="text"
-            name="team-name"
-            placeholder="Team Name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <div class="row">
-            <div class="col">
-              <input
-                class="form-control"
-                type="text"
-                name="team-leader-name"
-                placeholder="Team Leader Name"
-                required
-              />
-            </div>
-            <div class="col">
-              <input
-                class="form-control"
-                type="text"
-                name="mobile-no"
-                placeholder="Mobile No"
-                required
-              />
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <input
-            class="form-control"
-            type="email"
-            name="email"
-            placeholder="Email(Team Leader)"
-          />
-        </div>
-        <!--member details-->
-        <div class="form-group">
-          <label for="">Member 1 Details</label>
-          <div class="row">
-            <div class="col">
-              <input
-                class="form-control"
-                type="text"
-                id="member-name-1"
-                placeholder="Member Name"
-                required
-              />
-            </div>
-            <div class="col">
-              <input
-                class="form-control"
-                type="email"
-                id="member-email-1"
-                placeholder="Email"
-                required
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <input
-              class="form-control"
-              type="text"
-              id="member-mobile-no-1"
-              placeholder="Mobile No"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="">Member 2 Details</label>
-          <div class="row">
-            <div class="col">
-              <input
-                class="form-control"
-                type="text"
-                id="member-name-2"
-                placeholder="Member Name"
-                required
-              />
-            </div>
-            <div class="col">
-              <input
-                class="form-control"
-                type="email"
-                id="member-email-2"
-                placeholder="Email"
-                required
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <input
-              class="form-control"
-              type="text"
-              id="member-mobile-no-2"
-              placeholder="Mobile No"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="">Member 3 Details</label>
-          <div class="row">
-            <div class="col">
-              <input
-                class="form-control"
-                type="text"
-                id="member-name-3"
-                placeholder="Member Name"
-                required
-              />
-            </div>
-            <div class="col">
-              <input
-                class="form-control"
-                type="email"
-                id="member-email-3"
-                placeholder="Email"
-                required
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <input
-              class="form-control"
-              type="text"
-              id="member-mobile-no-3"
-              placeholder="Mobile No"
-              required
-            />
-          </div>
-        </div>
-        <label for="">Project Details:</label>
-        <div class="form-group">
-          <label for="sel1">Select theme:</label>
-          <select
-            class="form-control"
-            type="text"
-            name="project-theme"
-            required
-          >
-            <option value="Organic Farming">Organic Farming</option>
-            <option value="Water Management">Water Management</option>
-            <option value="Renewable Energy">Renewable Energy</option>
-            <option value="Artisans, Industries and Livelihood"
-              >Artisans, Industries and Livelihood</option
-            >
-            <option value="Basic Aminities">Basic Aminities</option>
-            <option value="Infrastructure">Infrastructure</option>
-            <option value="Women Empowerment">Women Empowerment</option>
-            <option value="Education and Training"
-              >Education and Training</option
-            >
-          </select>
-        </div>
-        <div class="form-group">
-          <textarea
-            class="form-control"
-            name="problem"
-            placeholder="Problem Statement"
-            required
-            rows="4"
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <textarea
-            class="form-control"
-            name="solution"
-            placeholder="Solution"
-            required
-            rows="5"
-          ></textarea>
-        </div>
-        <input type="file" name="ppt" />
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" type="submit">
-            Register
-          </button>
-        </div>
-      </form>
-      <div id="thanks" hidden class="alert alert-success" role="alert">
-        Registration successfull. All The Best!
-      </div>
-      <div hidden class="alert alert-danger" id="error-msg" role="alert"></div>
-    </div>
-    <script src="js/themeRegistration.js"></script>
-  </body>
+				<div class="form-group">
+					<input
+						class="form-control"
+						type="text"
+						name="team-name"
+						placeholder="Team Name"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<input
+								class="form-control"
+								type="text"
+								name="team-leader-name"
+								placeholder="Team Leader Name"
+								required
+							/>
+						</div>
+						<div class="col">
+							<input
+								class="form-control"
+								type="text"
+								name="mobile-no"
+								placeholder="Mobile No"
+								required
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<input
+						class="form-control"
+						type="email"
+						name="email"
+						placeholder="Email(Team Leader)"
+					/>
+				</div>
+				<!--member details-->
+				<div class="form-group">
+					<label for="">Member 1 Details</label>
+					<div class="row">
+						<div class="col">
+							<input
+								class="form-control"
+								type="text"
+								id="member-name-1"
+								placeholder="Member Name"
+							/>
+						</div>
+						<div class="col">
+							<input
+								class="form-control"
+								type="email"
+								id="member-email-1"
+								placeholder="Email"
+							/>
+						</div>
+					</div>
+					<div class="form-group">
+						<input
+							class="form-control"
+							type="text"
+							id="member-mobile-no-1"
+							placeholder="Mobile No"
+						/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="">Member 2 Details</label>
+					<div class="row">
+						<div class="col">
+							<input
+								class="form-control"
+								type="text"
+								id="member-name-2"
+								placeholder="Member Name"
+							/>
+						</div>
+						<div class="col">
+							<input
+								class="form-control"
+								type="email"
+								id="member-email-2"
+								placeholder="Email"
+							/>
+						</div>
+					</div>
+					<div class="form-group">
+						<input
+							class="form-control"
+							type="text"
+							id="member-mobile-no-2"
+							placeholder="Mobile No"
+						/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="">Member 3 Details</label>
+					<div class="row">
+						<div class="col">
+							<input
+								class="form-control"
+								type="text"
+								id="member-name-3"
+								placeholder="Member Name"
+							/>
+						</div>
+						<div class="col">
+							<input
+								class="form-control"
+								type="email"
+								id="member-email-3"
+								placeholder="Email"
+							/>
+						</div>
+					</div>
+					<div class="form-group">
+						<input
+							class="form-control"
+							type="text"
+							id="member-mobile-no-3"
+							placeholder="Mobile No"
+						/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="">Member 4 Details</label>
+					<div class="row">
+						<div class="col">
+							<input
+								class="form-control"
+								type="text"
+								id="member-name-4"
+								placeholder="Member Name"
+							/>
+						</div>
+						<div class="col">
+							<input
+								class="form-control"
+								type="email"
+								id="member-email-4"
+								placeholder="Email"
+							/>
+						</div>
+					</div>
+					<div class="form-group">
+						<input
+							class="form-control"
+							type="text"
+							id="member-mobile-no-4"
+							placeholder="Mobile No"
+						/>
+					</div>
+				</div>
+				<label for="">Project Details:</label>
+				<div class="form-group">
+					<label for="sel1">Select theme:</label>
+					<select
+						class="form-control"
+						type="text"
+						name="project-theme"
+						required
+					>
+						<option value="Organic Farming">Organic Farming</option>
+						<option value="Water Management">Water Management</option>
+						<option value="Renewable Energy">Renewable Energy</option>
+						<option value="Artisans, Industries and Livelihood"
+							>Artisans, Industries and Livelihood</option
+						>
+						<option value="Basic Aminities">Basic Aminities</option>
+						<option value="Infrastructure">Infrastructure</option>
+						<option value="Women Empowerment">Women Empowerment</option>
+						<option value="Education and Training"
+							>Education and Training</option
+						>
+					</select>
+				</div>
+				<div class="form-group">
+					<textarea
+						class="form-control"
+						name="problem"
+						placeholder="Problem Statement"
+						required
+						rows="4"
+					></textarea>
+				</div>
+				<div class="form-group">
+					<textarea
+						class="form-control"
+						name="solution"
+						placeholder="Solution"
+						required
+						rows="5"
+					></textarea>
+				</div>
+				<input type="file" name="ppt" />
+				<div class="form-group">
+					<button class="btn btn-primary btn-block" type="submit">
+						Register
+					</button>
+				</div>
+			</form>
+			<div id="thanks" hidden class="alert alert-success" role="alert">
+				Registration successfull. All The Best!
+			</div>
+			<div hidden class="alert alert-danger" id="error-msg" role="alert"></div>
+		</div>
+		<script src="js/themeRegistration.js"></script>
+	</body>
 </html>

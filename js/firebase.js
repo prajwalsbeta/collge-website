@@ -2,6 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
 import 'firebase/storage'
+
 const firebaseConfig = {
 	apiKey: 'AIzaSyDP8YLLX7Q1HpHlet6zGyX9J0ufX3hgvhI',
 	authDomain: 'aissms-hackathon.firebaseapp.com',
