@@ -4,7 +4,10 @@ function changeNav() {
   auth.onAuthStateChanged(function (user) {
     if (user) {
       document.getElementById("homeBtn").removeAttribute("hidden", "");
-      document.querySelector(".navBtn").hidden = true;
+    } else {
+      document
+        .querySelectorAll(".navBtn")
+        .forEach((Element) => Element.removeAttribute("hidden", ""));
     }
   });
 }
