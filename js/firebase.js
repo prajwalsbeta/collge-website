@@ -3,13 +3,14 @@ import 'firebase/firestore'
 import 'firebase/auth'
 import 'firebase/storage'
 const firebaseConfig = {
-	apiKey: 'AIzaSyDhz2KWMu0QUKziPbO5Aql4qbljwU09aac',
-	authDomain: 'hackathon-e1052.firebaseapp.com',
-	databaseURL: 'https://hackathon-e1052.firebaseio.com',
-	projectId: 'hackathon-e1052',
-	storageBucket: 'hackathon-e1052.appspot.com',
-	messagingSenderId: '9834866629',
-	appId: '1:9834866629:web:b0d2af20864badfbe10dac',
+	apiKey: 'AIzaSyDP8YLLX7Q1HpHlet6zGyX9J0ufX3hgvhI',
+	authDomain: 'aissms-hackathon.firebaseapp.com',
+	databaseURL: 'https://aissms-hackathon.firebaseio.com',
+	projectId: 'aissms-hackathon',
+	storageBucket: 'aissms-hackathon.appspot.com',
+	messagingSenderId: '882436405932',
+	appId: '1:882436405932:web:7f77502649fba79e4dfd09',
+	measurementId: 'G-J2ELQFWDBY',
 }
 
 firebase.initializeApp(firebaseConfig)
