@@ -40,9 +40,10 @@
 		<div class="themeregister">
 			<form>
 				<p id="error" hidden>Please fill out all fields.</p>
-				<h2 class="sr-only">Registration Form</h2>
-
+				<h2 style="text-align: center;">Registration Form</h2>
+				<br />
 				<div class="form-group">
+					<label>Team Details</label>
 					<input
 						class="form-control"
 						type="text"
@@ -208,38 +209,47 @@
 						required
 					>
 						<option value="Organic Farming">Organic Farming</option>
-						<option value="Water Management">Water Management</option>
-						<option value="Renewable Energy">Renewable Energy</option>
+						<option value="Water Management"
+							>Water Management</option
+						>
+						<option value="Renewable Energy"
+							>Renewable Energy</option
+						>
 						<option value="Artisans, Industries and Livelihood"
 							>Artisans, Industries and Livelihood</option
 						>
 						<option value="Basic Aminities">Basic Aminities</option>
 						<option value="Infrastructure">Infrastructure</option>
-						<option value="Women Empowerment">Women Empowerment</option>
+						<option value="Women Empowerment"
+							>Women Empowerment</option
+						>
 						<option value="Education and Training"
 							>Education and Training</option
 						>
 					</select>
 				</div>
 				<div class="form-group">
+					<label for="problem">Problem Statement:</label>
 					<textarea
 						class="form-control"
 						name="problem"
-						placeholder="Problem Statement"
+						placeholder="Describe you problem statement here"
 						required
 						rows="4"
 					></textarea>
 				</div>
 				<div class="form-group">
+					<label for="solution">Solution:</label>
 					<textarea
 						class="form-control"
 						name="solution"
-						placeholder="Solution"
+						placeholder="Describe your solution here"
 						required
 						rows="5"
 					></textarea>
 				</div>
-				<input type="file" name="ppt" />
+				<label for="ppt">Upload PPT:</label><br />
+				<input type="file" name="ppt" required />
 				<div class="form-group">
 					<button class="btn btn-primary btn-block" type="submit">
 						Register
@@ -249,7 +259,12 @@
 			<div id="thanks" hidden class="alert alert-success" role="alert">
 				Registration successfull. All The Best!
 			</div>
-			<div hidden class="alert alert-danger" id="error-msg" role="alert"></div>
+			<div
+				hidden
+				class="alert alert-danger"
+				id="error-msg"
+				role="alert"
+			></div>
 		</div>
 		<script src="js/themeRegistration.js"></script>
 	</body>
