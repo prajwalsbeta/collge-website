@@ -280,3 +280,35 @@ body {
 .subnav:hover .subnav-content {
     display: block;
 }
+
+.rule_button1
+{
+  float: right;
+  background-color: DodgerBlue;
+  border: none;
+  height: 40px;
+  left:30px;
+  color: white;
+  padding: 8px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.rule_button2
+{
+  float: right;
+  border: none;
+  background-color: #2eb82e;
+  height: 40px;
+  left:30px;
+  color: white;
+  padding: 8px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.marq
+{
+  color:red;
+  font-size:35px;
+}
